@@ -4,16 +4,17 @@
 
 /**
  * main - Main function
- * Return: o
+ * Return: 0
  */
 
 int main(void)
 {
-	static int n;
-	int x = n % 10;
+	int n;
+	int x;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	x = n % 10;
 
 	if (x > 5)
 	{
@@ -21,11 +22,11 @@ int main(void)
 	}
 	else if (x == 0)
 	{
-		printf("Last digit of %d is %d and is 0", n, x);
+		printf("Last digit of %d is %d and is 0\n", n, x);
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0", n, x);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, x);
 	}
 	return (0);
 }
