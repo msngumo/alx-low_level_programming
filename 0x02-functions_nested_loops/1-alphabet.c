@@ -1,19 +1,16 @@
 #include "main.h"
 
 /**
- * main -  Main program
- *
- * Return: On success 1.
+ * print_alphabet - lowercase alphabet
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char *str = "abcdefghijklmnopqrstuvwxyz";
+	int x = 97;
 
-	while (*str)
-	{
-		_putchar(*str++);
-	}
+	do {
+		_putchar(x);
+		x++;
+	} while (x <= 122);
 	_putchar('\n');
-	return (0);
 }
