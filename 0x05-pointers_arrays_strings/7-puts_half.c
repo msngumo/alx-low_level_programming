@@ -15,7 +15,7 @@ void puts_half(char *str)
 	{
 		int iter = a;
 
-		while (iter <= _strlen(str))
+		while (iter <= (_strlen(str) - 1))
 		{
 			_putchar(str[iter]);
 			iter++;
