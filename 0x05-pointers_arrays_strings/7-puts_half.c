@@ -23,9 +23,9 @@ void puts_half(char *str)
 	}
 	else
 	{
-		int iter = n -1;
+		int iter = n - 1;
 
-		while (iter <= _strlen(str) - 1)
+		while (iter <= _strlen(str))
 		{
 			_putchar(str[iter]);
 			iter++;
