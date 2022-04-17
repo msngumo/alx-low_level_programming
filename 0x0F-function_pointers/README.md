@@ -1,0 +1,3 @@
+# 0x0E. C - Function Pointers!
+___
+

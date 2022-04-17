@@ -1,3 +1,5 @@
-function that fills memory with a constant byte.
-Function that copies from source to destination
-locates a character in a string.
+## 0x07-pointers_arrays_strings
+___
+- What are pointers to pointers and how to use them
+- What are multidimensional arrays and how to use them
+- What are the most common C standard library functions to manipulate strings
