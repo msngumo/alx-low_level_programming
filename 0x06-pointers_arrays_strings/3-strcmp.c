@@ -3,16 +3,24 @@
 /**
  * _strcmp - compares two strings
  *
- * @s1: first string
+ * @s1: first strin
  * @s2: second string
  *
- * Return: 0 s1 == s2, -ve s1 < s2, +ve s1 > s2
+ * Return: Always positive (success)
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
+	int a = 0;
 
+	while (*(s1 + a) || *(s2 + a))
+	{
+		if (*(s1 + a) != *(s2 + a))
+			return (*(s1 + a) - *(s2 + a));
+		a++;
+	}
+
+<<<<<<< HEAD
 	for (; *(s1 + i) != '\0'; i++)
 		break;
 	for (; *(s2 + i) != '\0'; i++)
@@ -23,5 +31,8 @@ int _strcmp(char *s1, char *s2)
 		return (-);
 	else
 		return(+);
+=======
+>>>>>>> a5691edc22f8df7af3f409cd384e15693f87a882
 	return (0);
+
 }

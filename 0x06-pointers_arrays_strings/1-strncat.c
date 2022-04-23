@@ -3,23 +3,27 @@
 /**
  * _strncat - concatenates two strings
  *
- * @dest: destination string
- * @src: source string
- * @n: number of bytes from source
+ * @dest: pointer to string 1
+ * @src: pointer to string 2
+ * @n: Number of bytes
  *
- * Return: dest
+ * Return: pointer to a concatenated string
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int x = 0;
-	int y = 0;
+	int a = 0;
+	int b = 0;
 
-	for (; *(dest + x) != '\0'; x++)
-		;
-	for (; *(src + y) != '\0' &&  n > 0; y++, n--, x++)
+	while (*(dest + a))
+		a++;
+
+	while (b < n && src[b])
 	{
-		dest[x] = src[y];
+		*(dest + a + b) = src[b];
+		b++;
 	}
+
+
 	return (dest);
 }
